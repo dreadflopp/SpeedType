@@ -1,0 +1,384 @@
+/*******************************************************************************
+ * Project, Kurs: DT146G
+ * File: style.css
+ * Desc: Style sheets for project
+ *
+ * Mattias Lindell
+ * mali1624
+ * mattias.lindell@student.miun.se
+ ******************************************************************************/
+
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+@font-face {
+    font-family: OldStyle;
+    src: url(../font/OLDSH___.TTF)
+}
+
+@font-face {
+    font-family: TravelingTypewriter;
+    src: url(../font/TravelingTypewriter.ttf)
+}
+
+@font-face {
+    font-family: GeoSansLight;
+    src: url(../font/GeosansLight.ttf)
+}
+
+
+
+
+.hidden {
+    display:none;
+}
+
+body {
+    background: url(../img/background.jpg) repeat;
+    font-family: GeoSansLight, sans-serif;
+    font-size: 16px;
+    width: 600px;
+    margin:0 auto;
+}
+
+
+/* header */
+header { text-align: center; }
+
+.logotype {
+    width: 124px;
+    height: 90px;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: Oldstyle, Times, serif;
+    margin-top: 20px;
+    animation-duration: 12s;
+    animation-name: typing;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+
+    14% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    15% {
+        color: rgba(0,0,0,0.9);
+    }
+    16% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+
+    20% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    21% {
+        color: rgba(0,0,0,0.9);
+    }
+    22% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    23% {
+        color: rgba(0,0,0,0.9);
+    }
+    24% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    26% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    27% {
+        color: rgb(122, 0, 13);
+    }
+    28% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px rgb(122, 0, 13);
+    }
+    39% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px rgb(122, 0, 13);
+    }
+    40% {
+        color: rgba(0,0,0,0.9);
+    }
+    41% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    42% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    43% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    45% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    46% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    47% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    48% {
+        color: rgba(0,0,0,0.9);
+    }
+    49% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    50% {
+        color: rgb(122, 0, 13);
+    }
+    51% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px rgb(122, 0, 13);
+    }
+    70% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px rgb(122, 0, 13);
+    }
+    71% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    72% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    73% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    74% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    75% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    76% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    84% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    85% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    86% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    87% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    88% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    95% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+    96% {
+        color: rgba(0, 0, 0, 1.0);
+    }
+    97% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+
+    100% {
+        color: rgba(255,255,255,1.0);
+        text-shadow: 1px 1px 3px black;
+    }
+
+}
+
+
+/* main */
+#introduction {
+    margin-top: 50px;
+}
+
+#setup {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+#setup h2 {
+    width: 100%;
+}
+
+#settings {
+    margin-top: 1em;
+    width: 60%;
+}
+
+#ignoreCasing{
+    margin-bottom: 1em;
+}
+/* text Selector */
+#textSelector {
+    margin-top: 1em;
+    width: 40%
+}
+#selectedText {
+    display: block;
+}
+
+#selectedTextLabel {
+    display: inline-block;
+    text-align: center;
+}
+
+/* game */
+#gameArea {
+    margin-top: 50px;
+}
+
+#text {
+    margin-top: 1em;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#textName {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+#textAuthor {
+    font-size: 1.2em;
+    text-align: center;
+    color: gray;
+}
+
+#textArea {
+    font-size: 1em;
+}
+
+#cursor {
+    background-color: grey;
+}
+
+#beforeCursor {
+    color: grey;
+}
+
+.errorChar {
+    color: red;
+}
+
+/* Game input */
+#gameInput {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#input {
+    font-family: TravelingTypewriter, times, serif;
+    text-align: center;
+}
+
+.gameButton {
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.gameButton span {
+    display:none;
+}
+
+#playButton {
+    background: url(../img/play.svg);
+}
+
+#stopButton {
+    background: url(../img/stop.svg);
+}
+
+/* Statistics */
+#statisticsArea {
+    margin-top: 50px;
+}
+#statistics {
+    margin: 30px auto 0;
+    width: 320px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#left_col {
+    width: 50%;
+}
+
+#right_col {
+    width: 50%;
+}
+
+#graph {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 320px;
+    height: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+#graph {
+    background: white;
+
+}
+
+/* footer */
+footer {
+    margin-top: 100px;
+    border: 1px black;
+    border-top-style: solid;
+    padding-top: 10px;
+
+}
+
+footer h6 {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+footer a {
+    font-size: 0.8em;
+    font-style: normal;
+    color: black;
+}
+
+
+

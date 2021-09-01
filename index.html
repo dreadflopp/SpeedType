@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Mattias Lindell
+mali1624
+mattias.lindell@student.miun.se
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SpeedType</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <!-- sound file that is used in the javascript -->
+        <audio id="beep">
+            <source src="./audio/beep-03.ogg">
+            <source src="./audio/beep-03.mp3">
+        </audio>
+
+        <!-- Header section -->
+        <header>
+            <h1>
+                <img src="./img/typewriter.png" class="logotype" alt="logotype"/>
+                SpeedType
+            </h1>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                This game tests your typing skill and speed. Select language, text and if you want to ignore casing. Press play and start typing. When you are done, press stop. Below the text you'll see some statistics regarding your typing skill and a graph showing your typing speed and skill over time.
+            </section>
+            <section id="setup">
+                <h2>Settings</h2>
+                <!-- settings -->
+                <form id="settings">
+                    <p><input type="checkbox" id="ignoreCasing" name="ignoreCasing" value="ignoreCasing">
+                        <label for="ignoreCasing">Ignore casing?</label></p>
+                    <input type="radio" name="language" id="swedish" value="swedish" checked disabled>
+                    <label for="swedish">Swedish</label>
+                    <input type="radio" name="language" id="english" value="english" disabled>
+                    <label for="english">English</label>
+                </form>
+
+                <!-- text chooser -->
+                <form id="textSelector">
+                    <label id="selectedTextLabel">Select text:
+                        <select id="selectedText" name="selectedText">
+                            <option value="" selected="selected">Loading texts...</option>
+                        </select>
+                    </label>
+                </form>
+            </section>
+
+            <section id="gameArea">
+                <h2>Game</h2>
+                <section id="text">
+                    <p id="textName"></p>
+                    <p id="textAuthor"></p>
+                    <p id="textArea">[no text is selected]</p>
+                </section>
+
+                <form id="gameInput">
+                    <label>
+                        <input type="text" id="input" placeholder="Type here..." disabled>
+                    </label>
+                    <p><button type="reset" class="gameButton" id="playButton"><span>play</span></button></p>
+                    <p><button type="button" class="gameButton hidden" id="stopButton"><span>play</span></button></p>
+                </form>
+            </section>
+
+            <section id="statisticsArea">
+                <h2>Statistics</h2>
+                <div id="statistics">
+                    <div id="left_col">
+                        <p id="grossWPM">Gross WPM: 0</p>
+                        <p id="netWPM">Net WPM: 0</p>
+                    </div>
+                    <div id="right_col">
+                        <p id="accuracy">Accuracy: 0%</p>
+                        <span id="errors">Errors: 0</span>
+                    </div>
+                </div>
+                <canvas id="graph">A graph should be shown here. Switch to another browser with canvas-support.</canvas>
+            </section>
+        </main>
+
+        <!-- footer section -->
+        <footer>
+            <h6>Copyright &copy; 2018 Mattias Lindell. No rights reserved.</h6>
+            <address><a href="mailto:mali1624@student.miun.se">Contact me!</a></address>
+        </footer>
+    </body>
+</html>
